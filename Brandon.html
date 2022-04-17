@@ -3,15 +3,14 @@
 
 <head>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Satisfy&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
         *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family: 'Poppins',sans-serif;
+            font-family: 'Beau+Rivage'
         }
-        .puisi-content
+        .details
         {
             position: absolute;
             right: 0;
@@ -25,9 +24,11 @@
             color: white;
             z-index: 2;
         }
-        .puisi-judul img
+        .profilepic img
         {
             position: relative;
+            bottom: 20px;
+            left: 50px;
             width: 200px;
             border-radius: 500px;
         }
@@ -42,20 +43,27 @@
             
         }
         
-        .puisi-sajak
+        .mydetails
         {
             position: relative;
             z-index: 10;
         }
         
+        .intro img
+        {
+            position: absolute;
+            bottom: 150px;
+            width: 700px;
+            border-radius: 100px;
+        }
+
         .intro
-        {   top: 50px;
+        {   top: 250px;
             position: relative;
-            left: 100px;
             z-index: 11;
         }
 
-        .puisi-sajak h3
+        .mydetails h3
         {
             top: 50px;
             position: relative;
@@ -66,7 +74,7 @@
             text-transform: uppercase;
         }
 
-        .puisi-sajak p
+        .mydetails p
         {
             top: 50px;
             position: relative;
@@ -79,7 +87,7 @@
         }
 
 
-        .puisi-content video
+        .details video
         {
             position: absolute;
             top: 0;
@@ -98,7 +106,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(to right,black, green);
             mix-blend-mode: overlay;
         }
 
@@ -112,35 +119,36 @@
 </head>
 
 <body>
-    <section id="main-content" class="puisi-content">
-        <header id="judul" class="puisi-judul">
+    <section id="main-content" class="details">
+        <header id="ppic" class="profilepic">
             <img src="brandon.jpeg">
         </header>
         <video src="Sea.mp4" autoplay loop muted></video>
         <div id="overlay" class="backdrop"></div>
 
 
-        <div id="sajak" class="puisi-sajak">
+        <div id="mydetails" class="mydetails">
             <h3>Personal Details</h3>
 
             <p>
-                Group: 12 <br>
-                Name: Brandon Liew Yi Quan <br>
-                Age: 22 <br>
-                Birthdate: 05/08/2000 <br>
-                Hometown: Kuching,Sarawak <br>
-                Phone Number: 019-7668762 <br>
-                Email: brandon_1331@hotmail.com <br>
-                Hobby: Basketball, Reading <br>
+                Group: 12 <br><br>
+                Name: Brandon Liew Yi Quan <br><br>
+                Age: 22 <br><br>
+                Birthdate: 05/08/2000 <br><br>
+                Hometown: Kuching,Sarawak <br><br>
+                Phone Number: 019-7668762 <br><br>
+                Email: brandon_1331@hotmail.com <br><br>
+                Hobby: Basketball, Reading <br><br>
             </p>            
 
         </div>
 
         <div class="intro">
+            <img src="fp.jpeg">
             <p>
                 Hi, my name is Brandon and I am the youngest in my family of 7. <br>
                 I have 2 brothers and 2 sisters, most of them are married and <br>
-                I have a niece and 3 nephews. I like to play basketball and reading <br>
+                I have a niece and 4 nephews. I like to play basketball and reading <br>
                 fantasy or mythological novels. I have an interest in Artificial Intelligence <br>
                 and plan to dedicate myself to developing solutions that implement the AI concept after I graduate.
             </p>
