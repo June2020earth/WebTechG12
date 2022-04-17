@@ -1,3 +1,4 @@
+/* Overall */
 *
 {
     margin:0;
@@ -5,10 +6,19 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
-html
+html, body
 {
+    width:100%;
     height:100%;
 }
+a
+{
+    text-decoration:none;
+    color:black;
+}
+
+
+
 /*For header*/
 .header
 {
@@ -33,21 +43,49 @@ html
     display:flex;
     justify-content:center;
     align-items:center;
+    margin:5px;
 }
-
+#headerList li
+{
+    padding:20px;
+}
 #groupName
 {
 
     text-align:center;
 
 }
+/* Team Member css */
+#TeamName
+{
+    list-style-type: none;
+}
+#TeamName .Reveal 
+{
+    position:static;
+}
 #TeamName .notReveal
 {
     display:none;
 }
+#TeamName:hover
+{
+    padding-top:203px;
+}
 #TeamName:hover .notReveal
 {
     display:block;
+    background-color:white;
+}
+.notReveal::after
+{
+    content:"";
+    background:#000000;
+    position:absolute;
+    bottom: 25%;
+    left:0;
+    height:50%;
+    width:1px;
 }
 /*
 #TeamMemberselect
@@ -55,6 +93,10 @@ html
     border:none;
     text-decoration: none;
 }/*
+
+
+
+
 /*For body*/
 .body
 {
@@ -62,7 +104,8 @@ html
     height:100%;
     padding:0;
     margin:0;
-    height:100%;
+    width:100%;
+    overflow:hidden;
     
 }
 #sea-background
