@@ -74,6 +74,17 @@
             text-transform: uppercase;
         }
 
+        button
+        {
+            border-radius: 300px;
+            width: 100%;
+        }
+
+        button:hover
+        {
+            background-color: aqua;
+        }
+
         .mydetails p
         {
             top: 50px;
@@ -86,6 +97,10 @@
             margin: 20px 0;
         }
 
+        #moredetail
+        {
+            display: none;
+        }
 
         .details video
         {
@@ -129,16 +144,21 @@
 
         <div id="mydetails" class="mydetails">
             <h3>Personal Details</h3>
-
             <p>
                 Group: 12 <br><br>
                 Name: Brandon Liew Yi Quan <br><br>
+                For more details, click on the button below<br>
+                <button type="button" onclick="showdetails()">Click me</button>
+            </p>
+            <p id="moredetail">
                 Age: 22 <br><br>
                 Birthdate: 05/08/2000 <br><br>
                 Hometown: Kuching,Sarawak <br><br>
                 Phone Number: 019-7668762 <br><br>
                 Email: brandon_1331@hotmail.com <br><br>
                 Hobby: Basketball, Reading <br><br>
+                
+                
             </p>            
 
         </div>
@@ -159,4 +179,10 @@
     </section>
 </body>
 
+<script>
+    function showdetails()
+    {
+        document.getElementById("moredetail").style.display="block";
+    }
+</script>
 </html>
