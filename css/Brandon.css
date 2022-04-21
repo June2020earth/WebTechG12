@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+html, body
+{
+    width:100%;
+    height:100%;
+}
+a
+{
+    text-decoration:none;
+    color:black;
+}
+
+.header
+{
+    background-color: white;
+    position:absolute;
+    z-index:1;
+    position:center;
+    width:80%;
+    border:none;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:2%;
+    height:8%;
+    border-radius:0.2em;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+}
+#headerList
+{
+    list-style-type: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:5px;
+}
+#headerList li
+{
+    padding:20px;
+}
+#groupName
+{
+
+    text-align:center;
+
+}
+/* Team Member css */
+#TeamName
+{
+    list-style-type: none;
+}
+#TeamName .Reveal 
+{
+    position:static;
+}
+#TeamName .notReveal
+{
+    display:none;
+}
+#TeamName:hover
+{
+    padding-top: 202px;
+}
+#TeamName:hover .notReveal
+{
+    display:block;
+    background-color:white;
+}
+.notReveal::after
+{
+    content:"";
+    background:#000000;
+    position:absolute;
+    bottom: 25%;
+    left:0;
+    height:50%;
+    width:1px;
+}
+.background
+{
+    z-index:-1;
+    height:100%;
+    padding:0;
+    margin:0;
+    width:100%;
+    overflow:hidden;
+    
+}
+#sea-background
+{
+    width:100%;
+    height:auto;
+    
+}
+
+img
+{
+    position: absolute;
+    border-radius: 500px;
+    width: 200px;
+    top: 100px;
+    left: 150px;
+}
+
+.mydetails
+{
+    position: absolute;
+    top:300px;
+    left: 150px;
+    color: white;
+}
+
+button
+{
+    position: absolute;
+    background-color: aqua;
+    width: 500px;
+    top: 470px;
+    left :150px;
+    z-index: 2;
+}
+
+#moredetail
+{
+    top: 50px;
+    right: 58px;
+    position: relative;
+    display: none;
+    font-size: 18px;
+    color:honeydew;
+}
+
+.intro
+{
+    position: absolute;
+    left:800px;
+}
+
+.intro p
+{
+    position: relative;
+    top: 400px;
+    color: beige;
+}
+.intro img
+{
+    width: 380px;
+}

@@ -2,187 +2,75 @@
 <html lang="en">
 
 <head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Beau+Rivage'
-        }
-        .details
-        {
-            position: absolute;
-            right: 0;
-            width: 100%;
-            min-height: 100vh;
-            padding: 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            color: white;
-            z-index: 2;
-        }
-        .profilepic img
-        {
-            position: relative;
-            bottom: 20px;
-            left: 50px;
-            width: 200px;
-            border-radius: 500px;
-        }
-        header
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 40px 100px;
-            z-index: 10;
-            
-        }
-        
-        .mydetails
-        {
-            position: relative;
-            z-index: 10;
-        }
-        
-        .intro img
-        {
-            position: absolute;
-            bottom: 150px;
-            width: 700px;
-            border-radius: 100px;
-        }
-
-        .intro
-        {   top: 250px;
-            position: relative;
-            z-index: 11;
-        }
-
-        .mydetails h3
-        {
-            top: 100px;
-            position: relative;
-            font-size: 4em;
-            font-weight: 700;
-            color: white;
-            line-height: 1em;
-            text-transform: uppercase;
-        }
-
-        button
-        {
-            border-radius: 300px;
-            width: 100%;
-        }
-
-        button:hover
-        {
-            background-color: aqua;
-        }
-
-        .mydetails p
-        {
-            top: 100px;
-            position: relative;
-            font-size: 1.1em;
-            font-weight: 400;
-            color: white;
-            line-height: 1em;
-            max-width: 700px;
-            margin: 20px 0;
-        }
-
-        #moredetail
-        {
-            display: none;
-        }
-
-        .details video
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.8;
-
-        }
-        
-        .backdrop
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            mix-blend-mode: overlay;
-        }
-
-    </style>
-
-
+    <link href="css/Brandon.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Liew Yi Quan</title>
 </head>
-
 <body>
-    <section id="main-content" class="details">
-        <header id="ppic" class="profilepic">
-            <img src="brandon.jpeg">
-        </header>
-        <video src="Sea.mp4" autoplay loop muted></video>
-        <div id="overlay" class="backdrop"></div>
-
-
-        <div id="mydetails" class="mydetails">
-            <h3>Personal Details</h3>
-            <p>
-                Group: 12 <br><br>
-                Name: Brandon Liew Yi Quan <br><br>
-                For more details, click on the button below<br>
-                <button type="button" onclick="showdetails()">Click me</button>
-            </p>
-            <p id="moredetail">
-                Age: 22 <br><br>
-                Birthdate: 05/08/2000 <br><br>
-                Hometown: Kuching,Sarawak <br><br>
-                Phone Number: 019-7668762 <br><br>
-                Email: brandon_1331@hotmail.com <br><br>
-                Hobby: Basketball, Reading <br><br>
+    <div class="header">
+        <ul id="headerList">
+            <li>
+                <p id="groupName"><a href="main.html">Web Tech Group 12</a></p>
+            </li>
+            <li>
+                <ul id="TeamName">
+                    <li class="Reveal">Team Member</li>
+                    <li class="notReveal"><a href="TaiWenJun.html">Tai Wen Jun</a></li>
+                    <li class="notReveal"><a href="ricky.html">Ricky</a></li>
+                    <li class="notReveal"><a href="Brandon.html">Brandon Liew Yi Quan</a></li>
+                </ul>
                 
-                
-            </p>            
+            </li>
+        </ul>
+    </div>
+    <img src="brandon.jpeg">
+    <div id="mydetails" class="mydetails">
+        <h3>Personal Details</h3>
+        <p>
+            Group: 12 <br><br>
+            Name: Brandon Liew Yi Quan <br><br>
+            For more details, click on the button below<br>
 
-        </div>
+            
+        </p>
+        <pre id="moredetail">
+            Age: 22
 
-        <div class="intro">
-            <img src="fp.jpeg">
-            <p>
-                Hi, my name is Brandon and I am the youngest in my family of 7. <br>
-                I have 2 brothers and 2 sisters, most of them are married and <br>
-                I have a niece and 4 nephews. I like to play basketball and reading <br>
-                fantasy or mythological novels. I have an interest in Artificial Intelligence <br>
-                and plan to dedicate myself to developing solutions that implement the AI concept after I graduate.
-            </p>
-        </div>
+            Birthdate: 05/08/2000 
 
+            Hometown: Kuching,Sarawak                   Phone Number: 019-7668762
+
+            Email: brandon_1331@hotmail.com         Hobby: Basketball, Reading
+        </pre>
+            
+
+    </div>
+    <button type="button" onclick="showdetails()">Click me</button>
+    <div class="intro">
+        <img src="fp.jpeg">
+        <p>
+            Hi, my name is Brandon and I am the youngest in my family of 7.
+            I have 2 brothers and 2 sisters, most of them are married and
+            I have a niece and 4 nephews. <br><br>I like to play basketball and reading
+            fantasy or mythological novels. I have an interest in Artificial Intelligence
+            and plan to dedicate myself to developing solutions that implement the AI concept after I graduate.
+        </p>
+    </div>
+    <div class="background">
+        <video autoplay muted loop class="video" id="sea-background">
+            <source src="Sea.mp4" type="video/mp4">
+        </video>
         
+    </div>
 
-    </section>
 </body>
 
 <script>
     function showdetails()
     {
-        document.getElementById("moredetail").style.display="block";
+            document.getElementById("moredetail").style.display="block";
     }
 </script>
 </html>

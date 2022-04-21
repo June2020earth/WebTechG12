@@ -1,3 +1,88 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+html, body
+{
+    width:100%;
+    height:100%;
+}
+a
+{
+    text-decoration:none;
+    color:black;
+}
+
+.header
+{
+    background-color: white;
+    position:absolute;
+    z-index:1;
+    position:center;
+    width:80%;
+    border:none;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:2%;
+    height:8%;
+    border-radius:0.2em;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+}
+#headerList
+{
+    list-style-type: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:5px;
+}
+#headerList li
+{
+    padding:20px;
+}
+#groupName
+{
+    text-align:center;
+
+}
+/* Team Member css */
+#TeamName
+{
+    list-style-type: none;
+}
+#TeamName .Reveal 
+{
+    position:static;
+}
+#TeamName .notReveal
+{
+    display:none;
+}
+#TeamName:hover
+{
+    padding-top:201px;
+}
+#TeamName:hover .notReveal
+{
+    display:block;
+    background-color:white;
+}
+.notReveal::after
+{
+    content:"";
+    background:#000000;
+    position:absolute;
+    bottom: 25%;
+    left:0;
+    height:50%;
+    width:1px;
+}
+
 #backG
 {
     display:flex;
@@ -29,9 +114,8 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin-top: -50%;
+    margin-top: -10%;
     z-index: 1;
-    
 }
 #personalInfo
 {
